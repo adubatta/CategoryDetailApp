@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="myPadding">10dp</dimen>
+    <dimen name="fontTitle">35sp</dimen>
+
+</resources>
