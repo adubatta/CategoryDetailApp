@@ -12,7 +12,12 @@ public class Food  implements Parcelable{
 //            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes),
 //            new Food("Waffles", 7.50, "Crispy Golden Brown", R.drawable.waffles)
 //    };
-
+public Food(String name, double price, String desc, int imageResourceID){
+    this.name = name;
+    this.price = price;
+    this.desc = desc;
+    this.imageResourceID = imageResourceID;
+}
     public String toString(){
         return name;
     }
@@ -59,6 +64,9 @@ public class Food  implements Parcelable{
         dest.writeString(desc);
         dest.writeInt(imageResourceID);
     }
+    public static final Food[] myBreakfast = {
+            new Food("Food X", 11.99, "Food X", R.drawable.ic_launcher_background)
+    };
     public Food() {
         name = "";
         price = 0;
