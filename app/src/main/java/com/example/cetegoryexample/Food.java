@@ -9,9 +9,10 @@ public class Food  implements Parcelable{
     private String desc;
     private int imageResourceID;
 //    public static final Food[] myBreakfast = {
-//            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes),
+//            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.),
 //            new Food("Waffles", 7.50, "Crispy Golden Brown", R.drawable.waffles)
 //    };
+
 public Food(String name, double price, String desc, int imageResourceID){
     this.name = name;
     this.price = price;

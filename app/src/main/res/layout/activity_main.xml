@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="487dp"
         android:padding="20dp"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:src="@drawable/pankage1" />
 
 
     <TextView
