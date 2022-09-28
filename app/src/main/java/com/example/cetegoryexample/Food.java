@@ -8,10 +8,10 @@ public class Food  implements Parcelable{
     private double price;
     private String desc;
     private int imageResourceID;
-//    public static final Food[] myBreakfast = {
-//            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.),
-//            new Food("Waffles", 7.50, "Crispy Golden Brown", R.drawable.waffles)
-//    };
+    public static final Food[] myBreakfast = {
+            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pankage1),
+            new Food("Waffles", 7.50, "Crispy Golden Brown", R.drawable.pankage1)
+    };
 
 public Food(String name, double price, String desc, int imageResourceID){
     this.name = name;
@@ -65,9 +65,9 @@ public Food(String name, double price, String desc, int imageResourceID){
         dest.writeString(desc);
         dest.writeInt(imageResourceID);
     }
-    public static final Food[] myBreakfast = {
-            new Food("Food X", 11.99, "Food X", R.drawable.ic_launcher_background)
-    };
+//    public static final Food[] myBreakfast = {
+//            new Food("Food X", 11.99, "Food X", R.drawable.ic_launcher_background)
+//    };
     public Food() {
         name = "";
         price = 0;
