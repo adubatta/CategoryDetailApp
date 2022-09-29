@@ -42,13 +42,13 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 else if (position == 1) {
-                    for (Food f: Food.myBreakfast) { 		// they chose lunch
+                    for (Food f: Food.myLunch) { 		// they chose lunch
                         listData.add(f);
                     }
                 }
 
                 else if (position == 2) {
-                    for (Food f: Food.myBreakfast) { 		// they chose dinner
+                    for (Food f: Food.myDinner) { 		// they chose dinner
                         listData.add(f);
                     }
                 }

@@ -12,13 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="487dp"
         android:padding="20dp"
-        android:src="@drawable/pankage1" />
+        android:src="@drawable/battakitchen" />
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Secret Text (Battaboy Kitchen)!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

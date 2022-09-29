@@ -9,8 +9,22 @@ public class Food  implements Parcelable{
     private String desc;
     private int imageResourceID;
     public static final Food[] myBreakfast = {
-            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pankage1),
-            new Food("Waffles", 7.50, "Crispy Golden Brown", R.drawable.pankage1)
+            new Food("Pancake", 6.99, "Delicious Pancakes UNHEALTHY ", R.drawable.pankage1),
+            new Food("Waffles", 7.50, "Crispy Golden Brown", R.drawable.waffles),
+            new Food("Eggs and Toast", 9, "Delicious Eggcelent Meal", R.drawable.eggstoast)
+
+    };
+    public static final Food[] myLunch = {
+            new Food("Rajma Chawal", 5, "Black beans + rice", R.drawable.rajmachawal),
+            new Food("Chicken Biriyani", 10, "Chicken and rice with spices", R.drawable.biriyani),
+            new Food("Goat Curry", 15, "Goat curry with traditional indian spices", R.drawable.goatcurry)
+
+    };
+    public static final Food[] myDinner = {
+            new Food("Fish Caviar", 20, "Freshly prepared fish eggs with a sprinkle of salt", R.drawable.caviar),
+            new Food("Aloo Parantha", 25, "Crispy Golden Brown Aloo Parantha From India", R.drawable.aloo),
+            new Food("Creamy Tomato Soup ", 25, "Organic Tomato Soup with Cream ", R.drawable.soup)
+
     };
 
 public Food(String name, double price, String desc, int imageResourceID){
