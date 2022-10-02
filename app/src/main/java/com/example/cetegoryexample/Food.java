@@ -79,9 +79,7 @@ public Food(String name, double price, String desc, int imageResourceID){
         dest.writeString(desc);
         dest.writeInt(imageResourceID);
     }
-//    public static final Food[] myBreakfast = {
-//            new Food("Food X", 11.99, "Food X", R.drawable.ic_launcher_background)
-//    };
+
     public Food() {
         name = "";
         price = 0;
