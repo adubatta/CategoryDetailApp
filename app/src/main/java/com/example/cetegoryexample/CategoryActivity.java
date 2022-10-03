@@ -2,6 +2,7 @@ package com.example.cetegoryexample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -25,11 +26,12 @@ public class CategoryActivity extends AppCompatActivity {
             // The ArrayAdapter is what will take the data from the ArrayList and feed it to the ListView
             // You can create your own XML layout to describe how each row will look. This is the default layout,
             // calling the toString()
-        ArrayAdapter<Food> listAdapter = new ArrayAdapter<>(
-                this, android.R.layout.simple_list_item_1, dataToDisplay);
+//        ArrayAdapter<Food> listAdapter = new ArrayAdapter<>(
+//                this, android.R.layout.simple_list_item_1, dataToDisplay);
+        ActivityAdapter adapter = new ActivityAdapter(this, dataToDisplay);
         // This finds the listView and then adds the adapter to bind the data to this view
         ListView listView = (ListView) findViewById(R.id.categoryOptions);
-        listView.setAdapter(listAdapter);
+        listView.setAdapter(adapter);
 
         // Create listener to listen for when a student from the specific Category list is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

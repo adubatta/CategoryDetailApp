@@ -21,9 +21,9 @@ public class ActivityAdapter extends ArrayAdapter<Food> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.custom_row, parent, false);
         }
 
-        TextView name = (TextView) convertView.findViewById(R.id.nameTextView);
-        TextView price = (TextView) convertView.findViewById(R.id.priceTextView);
-        TextView desc = (TextView) convertView.findViewById(R.id.descTextView);
+        TextView name = (TextView) convertView.findViewById(R.id.foodName);
+        TextView price = (TextView) convertView.findViewById(R.id.foodPrice);
+        TextView desc = (TextView) convertView.findViewById(R.id.foodDescription);
 
         name.setText(myFood.getName());
         price.setText("$" + myFood.getPrice());
